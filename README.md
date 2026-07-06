@@ -13,7 +13,7 @@ An end-to-end Data Engineering pipeline designed to ingest, clean, and model rea
 * **Languages:** SQL (Advanced Window Functions, Aggregations)
 
 ### 📐 System Architecture Diagram
-![Architectural Diagram](<img width="1408" height="768" alt="Diagram_data_flow" src="https://github.com/user-attachments/assets/5c272e28-68a6-4304-8a6e-53da81b97d14" />)
+(<img width="1408" height="768" alt="Diagram_data_flow" src="https://github.com/user-attachments/assets/5c272e28-68a6-4304-8a6e-53da81b97d14" />)
 ---
 
 ## 🔄 Data Pipeline Flow

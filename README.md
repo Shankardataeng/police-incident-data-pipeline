@@ -11,10 +11,9 @@ An end-to-end Data Engineering pipeline designed to ingest, clean, and model rea
 * **Transformation & Modeling (ETL/ELT):** dbt (Data Build Tool Core)
 * **Business Intelligence:** Power BI (Reporting & Trend Dashboards)
 * **Languages:** SQL (Advanced Window Functions, Aggregations)
-
+---
 ### 📐 System Architecture Diagram
 <img width="800" height="468" alt="Diagram_data_flow" src="https://github.com/user-attachments/assets/5c272e28-68a6-4304-8a6e-53da81b97d14" />
----
 
 ## 🔄 Data Pipeline Flow
 AWS S3 (Raw Data Lake) ➔ Snowflake Stage (Single Base OBT View) ➔ dbt Core (Analytical Marts Transformation) ➔ Power BI (Business Intelligence)

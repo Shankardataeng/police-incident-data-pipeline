@@ -50,8 +50,13 @@ The curated metrics from dbt were funneled into **Power BI Desktop**, visualizin
 
 ---
 
-## 📂 How to Run This Project
+## ❄️ Snowflake Data Ingestion & Security Setup
 
-1. **Clone the repository:**
-   ```bash
+Before building the dbt transformations, the foundational database infrastructure and secure cloud pipelines were fully configured directly inside Snowflake:
+
+* **Role-Based Access Control (RBAC):** Implemented enterprise security compliance by creating a dedicated `dbt_role` and service user (`dbt_police`). Configured strict, least-privilege permissions to read raw data and write to analytical schemas without exposing the admin layer.
+* **Custom File Format parsing:** Built a reusable CSV file format layer (`s3_csv_format`) to handle specific string enclosures, skip transactional dirty headers, and process custom `NULL` bounds safely during data intake.
+* **Cloud Data Lake Connection (AWS S3 Integration):** Created an **External Stage** (`s3_stage`) to point Snowflake securely into the raw cloud repository, serving as our centralized Data Landing Zone.
+* **Optimized Bulk Loading (`COPY INTO`):** Initialized a structured base target table and executed a high-performance bulk copy operation from the AWS S3 stage. Applied the `ON_ERROR = continue` directive to maintain pipeline resilience by skipping anomalous records during runtime.
+---
    git clone [https://github.com/Shankardataeng/police-incident-data-pipeline.git](https://github.com/Shankardataeng/police-incident-data-pipeline.git)

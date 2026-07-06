@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+    - name: Police_incident
+      database: police_incident
+      schema: police_raw
+      tables: 
+        - name: police_incident_reports

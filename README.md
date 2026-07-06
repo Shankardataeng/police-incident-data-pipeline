@@ -54,4 +54,4 @@ The curated metrics from dbt were funneled into **Power BI Desktop**, visualizin
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/police-incident-data-pipeline.git](https://github.com/YOUR_USERNAME/police-incident-data-pipeline.git)
+   git clone [https://github.com/Shankardataeng/police-incident-data-pipeline.git](https://github.com/Shankardataeng/police-incident-data-pipeline.git)

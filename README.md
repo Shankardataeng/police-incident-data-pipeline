@@ -12,6 +12,9 @@ An end-to-end Data Engineering pipeline designed to ingest, clean, and model rea
 * **Business Intelligence:** Power BI (Reporting & Trend Dashboards)
 * **Languages:** SQL (Advanced Window Functions, Aggregations)
 
+### 📐 System Architecture Diagram
+![Architectural Diagram](<img width="1408" height="768" alt="Diagram_data_flow" src="https://github.com/user-attachments/assets/5c272e28-68a6-4304-8a6e-53da81b97d14" />
+)
 ---
 
 ## 🔄 Data Pipeline Flow
@@ -60,3 +63,5 @@ Before building the dbt transformations, the foundational database infrastructur
 * **Optimized Bulk Loading (`COPY INTO`):** Initialized a structured base target table and executed a high-performance bulk copy operation from the AWS S3 stage. Applied the `ON_ERROR = continue` directive to maintain pipeline resilience by skipping anomalous records during runtime.
 ---
    git clone [https://github.com/Shankardataeng/police-incident-data-pipeline.git](https://github.com/Shankardataeng/police-incident-data-pipeline.git)
+
+
